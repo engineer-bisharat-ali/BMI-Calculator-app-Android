@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#0A0E21"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_125sdp"
+            android:layout_marginTop="@dimen/_15ssp"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal"
+
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/gender_effect_male"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:background="@drawable/linearlayout_input_design"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20ssp"
+                    android:src="@drawable/transperentmale">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/male_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Male"
+                    android:fontFamily="@font/cooljazz"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gender_effect_female"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/linearlayout_input_design"
+                android:layout_marginRight="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/transparents_female"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20ssp">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/female_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:fontFamily="@font/cooljazz"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17ssp" >
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:background="@drawable/linearlayout_input_design"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/height_ft"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/edittext_design"
+                android:drawableStart="@drawable/ic_baseline_height_24"
+                android:fontFamily="@font/cooljazz"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:hint="Height (ft)"
+                android:inputType="number"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#7A88B1"
+                android:textSize="12sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/height_inches"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:background="@drawable/edittext_design"
+                android:drawableStart="@drawable/ic_baseline_height_24"
+                android:fontFamily="@font/cooljazz"
+                android:gravity="center"
+
+                android:hint="Height (Inches)"
+                android:inputType="number"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#7A88B1"
+                android:textSize="@dimen/_12sdp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/weight_kg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:background="@drawable/edittext_design"
+                android:drawableStart="@drawable/ic_baseline_fitness_center_24"
+                android:fontFamily="@font/cooljazz"
+                android:gravity="center"
+                android:hint="Weight ( kg) "
+                android:inputType="number"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#7A88B1"
+                android:textSize="@dimen/_12sdp">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_20ssp"
+                android:background="@drawable/edittext_design"
+                android:drawableStart="@drawable/ic_baseline_more_time_24"
+                android:fontFamily="@font/cooljazz"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:hint="age"
+                android:inputType="number"
+                android:paddingLeft="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textColorHint="#7A88B1"
+                android:textSize="@dimen/_12sdp">
+
+            </EditText>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@drawable/calculate_btn_design"
+        android:fontFamily="@font/cooljazz"
+        android:text="Calculate Your BMI !"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+    </androidx.appcompat.widget.AppCompatButton>
+</androidx.constraintlayout.widget.ConstraintLayout>
